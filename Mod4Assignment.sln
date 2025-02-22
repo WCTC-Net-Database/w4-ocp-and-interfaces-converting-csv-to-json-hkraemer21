@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod4Assignment", "Mod4Assignment.csproj", "{EDAD1A5C-9CEB-4428-8A0B-032DBEDFBA93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDAD1A5C-9CEB-4428-8A0B-032DBEDFBA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAD1A5C-9CEB-4428-8A0B-032DBEDFBA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAD1A5C-9CEB-4428-8A0B-032DBEDFBA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAD1A5C-9CEB-4428-8A0B-032DBEDFBA93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

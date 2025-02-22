@@ -1,8 +1,8 @@
-using W4_assignment_template.Models;
+using Mod4Assignment.Models;
 
-namespace W4_assignment_template.Interfaces;
+namespace Mod4Assignment.Interfaces;
 
-public interface IFileHandler
+public interface IFileManager
 {
     List<Character> ReadCharacters(string filePath);
     void WriteCharacters(string filePath, List<Character> characters);

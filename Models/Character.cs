@@ -1,4 +1,4 @@
-namespace W4_assignment_template.Models;
+namespace Mod4Assignment.Models;
 
 public class Character
 {
@@ -6,5 +6,5 @@ public class Character
     public string Class { get; set; }
     public int Level { get; set; }
     public int HP { get; set; }
-    public List<string> Equipment { get; set; }
+    public string Equipment { get; set; }
 }

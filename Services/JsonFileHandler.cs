@@ -1,19 +1,27 @@
-using W4_assignment_template.Interfaces;
-using W4_assignment_template.Models;
+using Newtonsoft.Json;
+using Mod4Assignment.Interfaces;
+using Mod4Assignment.Models;
 
-namespace W4_assignment_template.Services;
+namespace Mod4Assignment.Services;
 
-public class JsonFileHandler : IFileHandler
+public class JsonFileManager : IFileManager
 {
+    private string _json;
+    public JsonFileManager(string filePath)
+    {
+        _json = File.ReadAllText(filePath);
+    }
+
     public List<Character> ReadCharacters(string filePath)
     {
-        // TODO: Implement JSON reading logic
-        throw new NotImplementedException();
+        List<Character> characters = new List<Character>();
+        characters = JsonConvert.DeserializeObject<List<Character>>(_json);
+        return characters;
     }
 
     public void WriteCharacters(string filePath, List<Character> characters)
     {
-        // TODO: Implement JSON writing logic
-        throw new NotImplementedException();
+        _json = JsonConvert.SerializeObject(characters);
+        File.WriteAllText(filePath, _json);
     }
 }
